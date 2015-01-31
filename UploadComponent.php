@@ -2,7 +2,7 @@
 
 
 /**
- * @author  Vinicius Pacheco Furtado <vin175pcheco@gmail.com>
+ * @author  Vinicius Pacheco Furtado <vin175pacheco@gmail.com>
  * @license www.foxxtec.com.br 
  * @date    17/01/2015
  * @vesion  0.0.0
