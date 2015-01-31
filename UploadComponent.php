@@ -123,7 +123,7 @@ class UploadComponent extends Component{
 	 * @return Boolean       True se salvou
 	 */
 	public function save($file, $dir, $name=false){
-
+		//...
 
 	}
 
@@ -219,12 +219,6 @@ class UploadComponent extends Component{
 		
 	}
 
-	public function delete($file, $dir=false){
-		if(!$dir) $dir = $this->dir;
-		unlink();
-
-	}
-
 	/**
 	 * Calcula o rendimensionamento de uma imagem
 	 * @param  Float   $w     Largura da imagem
@@ -275,7 +269,6 @@ class UploadComponent extends Component{
 		if(file_exists($dir.$name)){
 			unlink($dir.$name);	
 		}
-		
 	}
 
 
