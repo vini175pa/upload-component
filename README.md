@@ -1,5 +1,5 @@
 ##  UploadComponent
-UploadComponent is a simple component developed to support uploading any kind of file through CakePHP. It's gave you total control of uploaded files and special functions to deal with image upload
+UploadComponent is a simple component developed to support uploading any kind of file through CakePHP. It gives you total control of uploaded files and special functions to deal with image upload
 
 --
 
