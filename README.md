@@ -5,22 +5,24 @@ UploadComponent is a simple component developed to support uploading any kind of
 
 ##### Usage example :
 
-    $able =  $this->Upload->able($this->request->data['foto'], true);	
-    if($able === true){
-     $foto = uniqid(time());
-     $img1 = $this->Upload->uploadIMG($this->request->data['foto'],
-     	array(
-     		"quality" => "H",
-     		"resize"=>array(
-     			"width"  => 140,
-     			"height" => 140,
-     			"cover"  => 'cover'
-     		),
-     		"name" => $foto."_140"
-     	));
-      if($img1 !== true) $this->Session->setFlush('Algo de errado aconteceu : '.$img1 );
-    }else{
-    	$this->Session->setFlush('Erro : '.$able);
+    if($this->request->is('post')){
+        $able =  $this->Upload->able($this->request->data['foto'], true);	
+        if($able === true){
+            $foto = uniqid(time());
+            $img1 = $this->Upload->uploadIMG($this->request->data['foto'],
+                array(
+         		    "quality" => "H",
+         		    "resize"=>array(
+         			    "width"  => 140,
+         			    "height" => 140,
+         			    "cover"  => 'cover'
+         		    ),
+            "name" => $foto."_140"
+         	));
+            if($img1 !== true) $this->Session->setFlush('Algo de errado aconteceu : '.$img1 );
+        }else{
+            $this->Session->setFlush('Erro : '.$able);
+        }
     }
     
 
