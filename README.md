@@ -1,9 +1,9 @@
 ##  UploadComponent
-Classe de upload de arquivos para o cakePHP. 
+An CakePHP file upload component 
 
 --
 
-##### Exemplos :
+##### Usage example :
 
     $able =  $this->Upload->able($this->request->data['foto'], true);	
     if($able === true){
