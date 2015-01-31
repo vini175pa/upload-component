@@ -3,6 +3,8 @@ Classe de upload de arquivos para o cakePHP.
 
 --
 
+##### Exemplos :
+
     $able =  $this->Upload->able($this->request->data['foto'], true);	
     if($able === true){
      $foto = uniqid(time());
@@ -27,38 +29,42 @@ Classe de upload de arquivos para o cakePHP.
 
 --
 
-##### *UploadComponent*::dir
+##### Documentação :
+
+--
+
+###### *UploadComponent*::dir
 
 Direitorio a ser salvo
 
 --
 
 
-##### *UploadComponent*::chagedir(*String* $dir)
+###### *UploadComponent*::chagedir(*String* $dir)
  
 Muda o direito atual a ser salvo
 
 --
 
-##### *UploadComponent*::trueFile(*File* $file)
+###### *UploadComponent*::trueFile(*File* $file)
 
 Retorna o verdadeiro Array do arquivo
 
 --
 
-##### *UploadComponent*::file(*File* $file)
+###### *UploadComponent*::file(*File* $file)
 
 Seta o arquivo atual
 
 --
 
-##### *UploadComponent*::clear()
+###### *UploadComponent*::clear()
 
 Limpa as variaveis e remove o arquivo sendo usado
 
 --
 
-##### *UploadComponent*::delete(*String* $name = *UploadComponent*::file, *String* $dir)
+###### *UploadComponent*::delete(*String* $name = *UploadComponent*::file, *String* $dir)
 
   - **$name** Nome do arquivo
   - **$dir** Direito do arquivo
@@ -67,13 +73,13 @@ Deleta um arquivo no diretorio atual
 
 --
 
-##### *UploadComponent*::fileType(*File* $file)
+###### *UploadComponent*::fileType(*File* $file)
 
 Retorna o tipo do arquivo
 
 --
 
-##### *UploadComponent*::uploadImg(*File* $file, *Array* $params)
+###### *UploadComponent*::uploadImg(*File* $file, *Array* $params)
  - *Array** *$params**
     * *Array* Resize
         * *Integer* width
@@ -84,14 +90,14 @@ Retorna o tipo do arquivo
     
 --
 
-##### *UploadComponent*::able( *File* $file, *Boolean* $msg = false, *Array* $ext)
+###### *UploadComponent*::able( *File* $file, *Boolean* $msg = false, *Array* $ext)
  - **$file** Arquivo a ser verificado
  - **$msg**  Retornar uma messagem ou Boolean
  - **$ext**  Array com tipos de aquivo aceitos
 
 --
 
-##### *UploadComponent*::resize(*Integer* $w, *Integer* $h, *Integer* $x, *Integer* $y, *Boolean* $cover=false)
+###### *UploadComponent*::resize(*Integer* $w, *Integer* $h, *Integer* $x, *Integer* $y, *Boolean* $cover=false)
  - **$w** Largura da imagem
  - **$h** Altura da image
  - **$x** Nova Largura
@@ -102,6 +108,7 @@ Retorna um array com novo W, H, X, Y
 
 --
 
-##### Contribuidores
+###### Contribuidores
 
   - Vinicius Pacheco
+  - João Pedro Alvez
