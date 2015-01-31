@@ -1,5 +1,5 @@
 ##  UploadComponent
-An CakePHP file upload component 
+A CakePHP file upload component 
 
 --
 
