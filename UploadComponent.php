@@ -22,7 +22,7 @@ class UploadComponent extends Component{
 	 * Diretório padrão a ser salvo
 	 * @var STRING
 	 */
-	public $dir = WWW_ROOT;
+	protected $dir = WWW_ROOT;
 
 
 	/**
@@ -219,6 +219,12 @@ class UploadComponent extends Component{
 		
 	}
 
+	public function delete($file, $dir=false){
+		if(!$dir) $dir = $this->dir;
+		unlink();
+
+	}
+
 	/**
 	 * Calcula o rendimensionamento de uma imagem
 	 * @param  Float   $w     Largura da imagem
@@ -263,8 +269,13 @@ class UploadComponent extends Component{
 
 	}
 
-	public function delete($name){
-		unlink($this->dir.$name);
+	public function delete($name, $dir=false){
+		if(!$dir) $dir = $this->dir;
+		if(!$name) $name = $this->filename;
+		if(file_exists($dir.$name)){
+			unlink($dir.$name);	
+		}
+		
 	}
 
 
