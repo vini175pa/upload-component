@@ -34,7 +34,7 @@ Limpa as variaveis e remove o arquivo sendo usado
 
 --
 
-##### *UploadComponent*::delete(*String* $name = *UploadComponent*::file, *String* $dir = *UploadComponent*::dir)
+##### *UploadComponent*::delete(*String* $name = *UploadComponent*::file, *String* $dir)
 
   - **$name** Nome do arquivo
   - **$dir** Direito do arquivo
