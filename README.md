@@ -107,10 +107,3 @@ Retorna o tipo do arquivo
  - **$cover** Cortar a imagem
 
 Retorna um array com novo W, H, X, Y
-
---
-
-###### Contribuidores
-
-  - Vinicius Pacheco
-  - João Pedro Alves
