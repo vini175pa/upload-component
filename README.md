@@ -113,4 +113,4 @@ Retorna um array com novo W, H, X, Y
 ###### Contribuidores
 
   - Vinicius Pacheco
-  - João Pedro Alvez
+  - João Pedro Alves
