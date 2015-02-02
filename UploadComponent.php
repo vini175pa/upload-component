@@ -85,9 +85,9 @@ class UploadComponent extends Component{
 				// 	$y = $params['resize']['y'] === "center" ? $resize['h']*0.5 : ($params['resize']['y']/100)*$resize['h'];
 
 				if(@$params['quality'] == 'H'){
-					imagecopyresized($thumb, $new_img, 0, 0, $x, $y, $resize['w'], $resize['h'], $w, $h);
+					imagecopyresampled($thumb, $new_img, 0, 0, $x, $y, $resize['w'], $resize['h'], $w, $h);
 				}else{
-					imagecopyresampled($thumb, $new_img, 0, 0, $x, $y, $resize['w'], $resize['h'], $w, $h);	
+					imagecopyresized($thumb, $new_img, 0, 0, $x, $y, $resize['w'], $resize['h'], $w, $h);	
 				}
 				
 
