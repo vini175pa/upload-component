@@ -110,7 +110,9 @@ Retorna um array com novo W, H, X, Y
 
 --
 
-###### Contribuidores
 
-  - Vinicius Pacheco
-  - João Pedro Alvez
+###### *UploadComponent*::save(*File* $file=false, *String* $dir=false, *String*  $name=false)
+ - **$file** Arquivo a ser salvo. Caso nulo salva o arquivo atual *$this->file*
+ - **$dir**  Diretório a ser salvo. Caso nulo salva no diretório atual *$this->dir*
+ - **$name** Nome a ser salvo. **NOTA** Deve incluir a extensão do arquivo com um ponto. Caso nulo salva como time()
+ 
