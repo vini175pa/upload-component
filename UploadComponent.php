@@ -152,6 +152,7 @@ class UploadComponent extends Component{
 			if(!$this->file) throw new Exception("Nada a ser salvo", 1);
 
 			move_uploaded_file($this->file['tmp_name'], $dir.$name);
+			return;
 			
 		}
 		$file = $this->trueFile($file);
